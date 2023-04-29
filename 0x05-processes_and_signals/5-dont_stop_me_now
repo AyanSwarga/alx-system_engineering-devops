@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#this script is to kill a process that runs indefinitly.
+
+kill [pid]
