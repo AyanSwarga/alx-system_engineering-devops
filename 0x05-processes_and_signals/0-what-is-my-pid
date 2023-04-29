@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-#this script is to display my PID.
+#this script is to display it own PID.
 
-echo "My PID is $$"
+echo $$
