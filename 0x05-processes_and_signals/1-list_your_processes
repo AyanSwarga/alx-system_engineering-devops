@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# this script is to dispiay a list of current running process.
+
+$ sp -A
