@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# this script is to display lines containing the word BASH
+# shellcheck disable=SC2009
+
+ps auxf | awk '/bash/ {print}'
