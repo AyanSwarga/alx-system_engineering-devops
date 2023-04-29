@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# this script is to stop the process
+
+pkill 67-stop_me_if_you_can
+echo "I am invincible!!!"

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#this script is to display indefinit process and stop it.
+
+while true
+	do
+	echo "To infinity and beyond"
+	sleep 2
+	echo "I am invincible!!!"
+	done
