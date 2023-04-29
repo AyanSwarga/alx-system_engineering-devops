@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# this script is to display all running PID with names, whose name contains BASH
+
+top auxf | awk '/bash/ {print}'
