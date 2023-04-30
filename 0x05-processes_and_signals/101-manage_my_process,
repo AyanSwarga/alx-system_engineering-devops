@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+# this script writes init script that manages another script process.
+
+PIDFILE=/var/run/my_process.pid
+
+case "$1" in
+	start)
+	  if [ -f $PIDFILE ]; then
+	    echo "Error: my_process is already running."
+	    exit 1
+	  else
+	    /path/to/manage_my_process &
+	    echo $! > $PIDFILE
+	    echo "manage_my process started."
+	  fi
+	  ;;
+	stop)
+	  if [ -f $PIDFILE ]; then
+	    kill "$(cat $PIDFILE)"
+	    rm $PIDFILE
+	    echo "manage_my_process stopped."
+	  else
+	    echo "Error: my_process is not running."
+	    exit 1
+	  fi
+	  ;;
+	restart)
+	  if [ -f $PIDFILE ]; then
+	    kill "$(cat $PIDFILE)"
+	    rm $PIDFILE
+	  fi
+	  /path/to/manage_my_process &
+	  echo $! > $PIDFILE
+	  echo "manage_my_process restarted."
+	  ;;
+	*)
+	  echo "Usage: $0 {start|stop|restart}"
+	  exit 1
+	  ;;
+	esac
+	exit 0
