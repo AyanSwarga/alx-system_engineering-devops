@@ -9,14 +9,14 @@ case "$1" in
 	    echo "Error: my_process is already running."
 	    exit 1
 	  else
-	    /path/to/manage_my_process &
+	    /path/to/101-manage_my_process &
 	    echo $! > $PIDFILE
 	    echo "manage_my process started."
 	  fi
 	  ;;
 	stop)
 	  if [ -f $PIDFILE ]; then
-	    kill "$(cat $PIDFILE)"
+	    kill "$(cat ${PIDFILE})"
 	    rm $PIDFILE
 	    echo "manage_my_process stopped."
 	  else
@@ -26,10 +26,10 @@ case "$1" in
 	  ;;
 	restart)
 	  if [ -f $PIDFILE ]; then
-	    kill "$(cat $PIDFILE)"
+	    kill "$(cat ${PIDFILE})"
 	    rm $PIDFILE
 	  fi
-	  /path/to/manage_my_process &
+	  /path/to/101-manage_my_process &
 	  echo $! > $PIDFILE
 	  echo "manage_my_process restarted."
 	  ;;
