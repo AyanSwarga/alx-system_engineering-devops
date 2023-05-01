@@ -2,4 +2,4 @@
 
 #this script is to display it own PID.
 
-echo $$
+echo the PID of this script is $$
