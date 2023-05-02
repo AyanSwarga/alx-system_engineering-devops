@@ -1,0 +1,10 @@
+#!/bin/bash
+#This script dispilays content of a file
+
+while IFS=':' read -r user pass uid gid gecos home shell
+do
+    echo "Username: $user"
+    echo "User ID: $uid"
+    echo "Home directory: $home"
+done < /etc/passwd
+

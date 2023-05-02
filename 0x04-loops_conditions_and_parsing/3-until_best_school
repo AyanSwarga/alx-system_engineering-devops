@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#This script prints Best School using the until loop
+
+i=3
+until ((i>12));
+do
+echo "Best School"
+
+i=$((i+1))
+done
