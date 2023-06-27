@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 # check for cmd arguments
 
 if [$# -lt 4]
@@ -7,10 +8,10 @@ if [$# -lt 4]
 fi
 
 # Assign variables arguments
-path_to_file = $1
-ip = $2
-username = $3
-path_to_ssh_key = $4
+path_to_file=$1
+ip=$2
+username=$3
+path_to_ssh_key=$4
 
 # Disable strct host key checking
 
