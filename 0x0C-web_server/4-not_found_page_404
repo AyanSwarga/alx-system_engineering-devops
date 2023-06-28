@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This page displays the ustom error
+
+INDEX_COPY="Hello World!"
+ERROR_TEXT="Ceci n'est pas une page"
+CHANGE_TEXT="error_page 404 /custom_404.html;\n        location = /custom_404.html {\n                root /var/www/html;\n                internal;\n        }"
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+echo "$INDEX_COPY" | sudo tee /var/www/html/index.nginx-debian.html
+echo "$ERROR_TEXT" | sudo tee /var/www/html/custom_404.html
+
+sudo sed -i "/^\slocation.*/i \        $CHANGE_TEXT" /etc/nginx/sites-available/default
+sudo service nginx start
