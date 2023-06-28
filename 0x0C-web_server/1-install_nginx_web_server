@@ -5,7 +5,7 @@
 sudo apt-get update
 
 # To install
-sudo apt-get install -y nginx
+sudo apt-get install nginx
 
 # To check status
 sudo service nginx status
