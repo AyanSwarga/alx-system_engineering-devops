@@ -1,22 +1,21 @@
-# This script Install and configure nginx
-package { 'jfryman-nginx':
-  ensure => installed,
+# puppet manifest; automation using puppet
+
+package { 'nginx':
+  ensuer => installed,
 }
 
-include nginx
-
-class { 'nginx':
-  manage_repo    => true,
-  package_source => 'nginx-stable',
+file_line { 'install':
+  ensure => 'present',
+  path   => '/etc/nginx/sites-enabled/default',
+  after  => 'listen 80 default_server;',
+  line   => 'rewrite ^/redirect_me https://www.github.com/ayanswarga permanent;',
 }
 
-nginx::resource::server { '34.73.76.135':
-  listen_port      => 80,
-  www_root         => '/var/www/html/',
-  vhost_cfg_append => { 'rewrite' => '^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent' },
+file { '/var/www/html/index.html':
+  content => 'Hello World!':,
 }
 
-file { 'index':
-  path    => '/var/www/html/index.nginx-debian.html',
-  content => 'Holberton School for the win!',
+service { 'nginx':
+  ensure => running,
+  requir => Package['nginx'],
 }
