@@ -1,9 +1,9 @@
-#!/user/bin/python3
-"""
-This Script uses a REST API, for a given employee ID, returns
+#!/usr/bin/python3
+"""This Script uses a REST API, for a given employee ID, returns
 information about his/her TODO list progress
 exporting data in the CSV format.
 """
+
 import csv
 import json
 import requests
