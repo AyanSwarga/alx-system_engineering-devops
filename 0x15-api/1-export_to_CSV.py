@@ -2,6 +2,7 @@
 """ This Python script to export data in the CSV format.
 """
 import csv
+import json
 import requests
 import sys
 
