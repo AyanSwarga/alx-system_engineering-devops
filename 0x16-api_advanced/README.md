@@ -1,6 +1,7 @@
 # 0x16. API advanced
 
 Python Scripting Back-end API
+<<<<<<< HEAD
 #### Background Context
 Questions involving APIs are common for interviews. Sometimes they’re as simple as ‘write a Python script that queries a given endpoint’, sometimes they require you to use recursive functions and format/sort the results.
 
@@ -13,3 +14,7 @@ Reddit API Documentation
 Query String
 #### Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google: 
+=======
+#### 
+![WIxXad8](https://github.com/AyanSwarga/alx-system_engineering-devops/assets/117749127/5d58570c-0374-4730-a0c2-6680bb1c9976)
+>>>>>>> 27de3e28f8a67b3bfe4fa6bd011beedcc7c2db56
