@@ -3,6 +3,7 @@
 
 import requests
 
+
 def count_words(subreddit, word_list, count_list=[], next_page=None):
     """Request subreddit recursively using pagination
     """
