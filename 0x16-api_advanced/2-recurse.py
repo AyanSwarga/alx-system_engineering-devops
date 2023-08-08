@@ -5,6 +5,7 @@ A function that queries the Reddit API
 import requests
 after = None
 
+
 def recurse(subreddit, hot_list=[]):
     """returning top ten post titles recursively"""
     global after
