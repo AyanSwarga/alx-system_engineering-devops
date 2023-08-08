@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""This script Query Reddit API
+""" This script Query Reddit API
 """
+
 import requests
 
 def number_of_subscribers(subreddit):
