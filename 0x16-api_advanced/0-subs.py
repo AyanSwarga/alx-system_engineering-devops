@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-"""Qquery subscribers on a given Reddit subreddit."""
+"""Query subscribers on a given Reddit subreddit."""
 
 import requests
-
 
 def number_of_subscribers(subreddit):
     """Return the total number of subscribers on a given subreddit."""
