@@ -7,6 +7,7 @@ For this project, we expect you to look at these concepts:
 Web Server
 Web stack debugging
 ## Background Context
+![image](https://github.com/AyanSwarga/alx-system_engineering-devops/assets/117749127/363925ce-7ea7-4031-8655-194fa22fe2c9)
 
 
 When debugging, sometimes logs are not enough. Either because the software is breaking in a way that was not expected and the error is not being logged, or because logs are not providing enough information. In this case, you will need to go down the stack, the good news is that this is something Holberton students can do :)
