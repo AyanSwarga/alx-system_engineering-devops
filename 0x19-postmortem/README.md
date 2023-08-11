@@ -1,4 +1,5 @@
 # 0x19. Postmortem
 
 DevOps SysAdmin
-https://twitter.com/devopsreact/status/834887829486399488
+
+https://medium.com/@ayannicholas/an-incident-postmortem-unplanned-downtime-on-swarga-web-service-edd3aa59e7d0
