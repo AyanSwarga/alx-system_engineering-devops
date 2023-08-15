@@ -1,6 +1,9 @@
 # 0x1B. Web stack debugging #4
 
 DevOps SysAdmin Scripting Debugging
+
+![image](https://github.com/AyanSwarga/alx-system_engineering-devops/assets/117749127/100a275e-6d88-4648-b8b8-df5656543f8d)
+
 #### Requirements
 General
 All your files will be interpreted on Ubuntu 14.04 LTS
